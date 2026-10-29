@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Conecta Tecnologia</title>
+    <link rel="stylesheet" href="iaportal.css">
+</head>
+<body> 
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Portal Conecta Tecnologia</h1>
+        <h3>Aprenda, compartilhe e descubra oportunidades</h3>
+    </header>
+    
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTAINER PRINCIPAL (MAIN + ASIDE LADO A LADO) -->
+    <div class="conteudo">
+        
+        <main>
+            <!-- SEÇÃO INÍCIO -->
+            <section id="inicio">
+                <h2>Bem-vindo ao nosso portal!</h2>
+                <p>Este site reúne informações sobre programação, inovação e formação profissional. Explore as seções e fique por dentro das atividades.</p>
+            </section>
+
+            <!-- SEÇÃO NOTÍCIAS -->
+            <article id="noticias">
+                <h2>Últimas notícias</h2>
+                <h3>Oficina de desenvolvimento web</h3>
+                <p>Os estudantes poderão participar de uma oficina prática sobre a criação de páginas para a internet.</p>
+                <h3>Feira de projetos tecnológicos</h3>
+                <p>A exposição apresentará projetos desenvolvidos por alunos em diferentes áreas da tecnologia.</p>
+            </article>
+
+            <!-- SEÇÃO CURSOS -->
+            <section id="cursos">
+                <h2>Cursos disponíveis</h2>
+                <ul>
+                    <li>Introdução ao HTML</li>
+                    <li>Fundamentos de CSS</li>
+                    <li>Lógica de programação</li>
+                    <li>Introdução ao JavaScript</li>
+                </ul>
+            </section>
+
+            <!-- SEÇÃO AGENDA -->
+            <section id="agenda">
+                <h2>Agenda de atividades</h2>
+                <p>Confira os próximos eventos do portal:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Atividade</th>
+                            <th>Local</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><time datetime="2026-11-05">05/11/2026</time></td>
+                            <td>Oficina de HTML</td>
+                            <td>Laboratório</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-11-12">12/11/2026</time></td>
+                            <td>Feira de projetos</td>
+                            <td>Auditório</td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-11-19">19/11/2026</time></td>
+                            <td>Palestra sobre carreiras em TI</td>
+                            <td>Sala multimídia</td>
+                        </tr>     
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- SEÇÃO CONTATO -->
+            <section id="contato">
+                <h2>Entre em contato</h2>
+                <form action="#" method="get" class="form-contato">
+                    
+                    <div class="campo campo-nome">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="campo campo-email">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+                    </div>
+
+                    <div class="campo campo-assunto">
+                        <label for="assunto">Assunto:</label>
+                        <select name="assunto" id="assunto">
+                            <option value="Dúvida">Dúvida</option>
+                            <option value="Cursos">Cursos</option>
+                            <option value="Eventos">Eventos</option>
+                        </select>
+                    </div>
+
+                    <div class="campo campo-mensagem">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </div>
+
+                    <div class="botoes">
+                        <input type="submit" value="Enviar mensagem">
+                        <input type="reset" value="Limpar">
+                    </div>
+                    
+                    <p><small>Formulário demonstrativo: não envia dados para um servidor.</small></p>
+                </form>
+            </section>
+        </main>
+
+        <!-- BARRA LATERAL (DIREITA) -->
+        <aside>
+            <h2>Destaques</h2>
+            <h3>Dica da semana</h3>
+            <p>Pratique HTML5 criando diferentes tipos de páginas.</p>
+            
+            <h2>Links úteis</h2>
+            <p>
+                <a href="https://www.w3.org/" target="_blank">W3C</a><br>
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a>
+            </p>
+            <hr>
+            
+            <h2>Enquete</h2>
+            <p>Qual assunto você quer aprender?</p>
+            <form action="#" method="get">
+                <label><input type="radio" name="tema" value="html"> HTML</label><br>
+                <label><input type="radio" name="tema" value="css"> CSS</label><br>
+                <label><input type="radio" name="tema" value="js"> JavaScript</label><br><br>
+                <button type="button" onclick="alert('Enquete demonstrativa!')">Votar</button>
+            </form>
+        </aside>
+
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Portal Conecta Tecnologia | Atividade didática de modernização HTML 4.01 para HTML5</p>
+        <a href=""></a>
+    </footer>
+</body>
+</html>
